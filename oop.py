@@ -14,7 +14,7 @@ print(s1)
 # Inheritance Example
 class TeachingAssistant(Student):
     def __init__(self, ta_id, name, age, student_id):
-        Student.__init__(self, name, age, student_id)
+        super().__init__(name, age, student_id)
         self.ta_id = ta_id
 
     def __str__(self):
